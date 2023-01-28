@@ -67,23 +67,28 @@ void swap(int *x, int *y) {
     *y = temp;
 }
 
-void bubble_sort(int array[],int length,char order[]) {
-    for(int i = 0; i < length; i++){
-        for(int j = 0; j < length - 1; j ++ ) {
-            if ( array[j] < array[j + 1]){
 
-                swap(&array[j],&array[j+ 1]);
+void insertion_sort(int array[],int length){
+
+    for ( int i  = 1; i < length; i ++) {
+
+        for( int j = 0; j < i;j++) {
+            if( array[i] > array[j]) {
+                swap(&array[i], &array[j]);
             }
-
         }
 
+
+        
     }
+
 }
+
 
 
 void main() {
     int main[4] = {4,2,5,3};
-    bubble_sort(main,4,"ascending");
+    insertion_sort(main,4);
     print_array(main,4);
 
 }
