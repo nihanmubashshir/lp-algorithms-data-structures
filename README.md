@@ -1,4 +1,4 @@
-# lp-algorithms-data-structures
+# Data Strcuture and Algorithms 
 A list of implementations of different algorithms and data structure.
 
 
